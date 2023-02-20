@@ -8,12 +8,14 @@
   }
   /* ================== HERO ==================== */
   .hero {
-    padding: 0 187px;
+    padding-top: 187px;
+    padding-bottom: 187px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/web_wtudio_desktop_bg/bg_desktop.jpg");
+    max-width: 1440px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -24,7 +26,6 @@
           rgba(46, 47, 66, 0.7)
         ),
         url("../images/web_wtudio_desktop_bg/bg_desktop@2x\ .jpg");
-      max-width: 1440px;
     }
     .hero-title {
       font-size: 56px;

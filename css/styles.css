@@ -114,84 +114,142 @@ img {
 /* ================== /COMPONENTS ================== */
 
 /* ==================HEADER================== */
-.page-header-container {
-  display: flex;
-  align-items: center;
-}
-.navigation {
-  display: flex;
-  align-items: center;
-  margin-right: auto;
-}
 .nav-list {
-  display: flex;
-  align-items: center;
+  display: none;
 }
-.header-contacts-list {
-  display: flex;
-  align-items: center;
-}
-.nav-item:not(:last-child) {
-  margin-right: 40px;
-}
-.header-contacts-item:not(:last-child) {
-  margin-right: 40px;
-}
-.main-header {
-  border-bottom: 1px solid #e7e9fc;
-}
-.nav-link {
-  position: relative;
-  display: block;
-  font-weight: 500;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-  transition: color var(--transform-dir-and-func);
-  padding-top: 24px;
-  padding-bottom: 24px;
+.header-contacts {
+  display: none;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #404bbf;
+.logotype {
+  font-family: "Raleway";
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
 }
-.current {
-  font-weight: 500;
-  line-height: 1.5;
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 24px 15px;
+  min-width: 100%;
+}
+.mob-menu-open-btn {
+  background-color: transparent;
+  border: none;
+}
+.humbg-menu-icon {
+  stroke: #2e2f42;
+}
+.mob-menu-close-btn {
+  position: absolute;
+  display: flex;
+  top: 40px;
+  right: 40px;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  cursor: pointer;
+  transition: background-color var(--transform-dir-and-func);
+}
+.mob-menu-close-btn-svg {
+  transition: fill var(--transform-dir-and-func);
+}
+.mob-menu-close-btn:hover,
+.mob-menu-close-btn:focus {
+  background-color: #404bbf;
+}
+.mob-menu-close-btn:hover .mob-menu-close-btn-svg,
+.mob-menu-close-btn:focus .mob-menu-close-btn-svg {
+  fill: var(--white-color);
+}
+.mob-menu-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--white-color);
+  top: 0;
+  z-index: 10;
+  padding-top: 80px;
+  padding-bottom: 40px;
+}
+.mob-menu-container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 45px;
+  padding-right: 45px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+}
+.mob-menu-item:not(:last-child) {
+  margin-bottom: 40px;
+}
+.mob-menu-list-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: #2e2f42;
+}
+.contacts {
   color: #404bbf;
 }
-.current-portfolio::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 66px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-}
-.current-index::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 48px;
-  height: 4px;
-  background-color: #404bbf;
-  border-radius: 2px;
-}
-.contact-link {
+.mob-menu-contact-link-tel {
   font-style: normal;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--text-color);
-  transition: color var(--transform-dir-and-func);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.11;
+  text-transform: capitalize;
+  color: #4d5ae5;
 }
-.contact-link:hover,
-.contact-link:focus {
-  color: #404bbf;
+.mob-menu-contact-link-mail {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #434455;
+}
+.mob-menu-contacts-item.tel {
+  margin-bottom: 40px;
+}
+.mob-menu-contacts-item.mail {
+  margin-bottom: 48px;
+}
+.mob-menu-sicial-list {
+  display: flex;
+  justify-content: center;
+  column-gap: 50px;
+}
+.mob-menu-social-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color var(--transform-dir-and-func);
+}
+.mob-menu-social-list-link:hover,
+.mob-menu-social-list-link:focus {
+  background-color: #404bbf;
+}
+.mob-menu-wrapper.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
 }
 /* ================== /HEADER ================== */
 /* ================== HERO ==================== */
