@@ -13,6 +13,9 @@
     />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/mobile.css" />
+    <link rel="stylesheet" href="./css/tablet.css" />
+    <link rel="stylesheet" href="./css/desktop.css" />
   </head>
   <body>
     <header class="main-header">
@@ -23,10 +26,12 @@
           >
           <ul class="nav-list list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">Studio</a>
+              <a href="./index.html" class="nav-link current current-index"
+                >Studio</a
+              >
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link current current-portfolio">Portfolio</a>
+              <a href="./portfolio.html" class="nav-link">Portfolio</a>
             </li>
             <li class="nav-item">
               <a href="#footer" class="nav-link">Contacts</a>
@@ -47,13 +52,110 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="mob-menu-open-btn" data-menu-open>
+          <svg class="humbg-menu-icon" width="32" height="22">
+            <use href="./images/sprite.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu-wrapper is-hidden" data-menu>
+        <button type="button" class="mob-menu-close-btn" data-menu-close>
+          <svg class="mob-menu-close-btn-svg" width="8" height="8">
+            <use href="./images/sprite.svg#icon-modal-cls-btn"></use>
+          </svg>
+        </button>
+        <div class="mob-menu-container">
+          <div>
+            <nav>
+              <ul class="mob-menu-list list">
+                <li class="mob-menu-item">
+                  <a href="./index.html" class="mob-menu-list-link">Studio</a>
+                </li>
+                <li class="mob-menu-item">
+                  <a href="./portfolio.html" class="mob-menu-list-link"
+                    >Portfolio</a
+                  >
+                </li>
+                <li class="mob-menu-item">
+                  <a href="#footer" class="mob-menu-list-link contacts"
+                    >Contacts</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div>
+            <address class="mob-menu-contacts">
+              <ul class="mob-menu-contacts-list list">
+                <li class="mob-menu-contacts-item tel">
+                  <a href="tel:+110001111111" class="mob-menu-contact-link-tel"
+                    >+11 (000) 111-11-11</a
+                  >
+                </li>
+                <li class="mob-menu-contacts-item mail">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mob-menu-contact-link-mail"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <ul class="mob-menu-sicial-list list">
+              <li class="mob-menu-social-list-item">
+                <a
+                  class="mob-menu-social-list-link"
+                  href="https://www.instagram.com/instagram/"
+                  target="_blank"
+                >
+                  <svg class="mob-menu-social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-list-item">
+                <a
+                  class="mob-menu-social-list-link"
+                  href="https://twitter.com/twitter?lang=uk"
+                  target="_blank"
+                >
+                  <svg class="mob-menu-social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-list-item">
+                <a
+                  class="mob-menu-social-list-link"
+                  href="https://www.facebook.com"
+                  target="_blank"
+                >
+                  <svg class="mob-menu-social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-menu-social-list-item">
+                <a
+                  class="mob-menu-social-list-link"
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                >
+                  <svg class="mob-menu-social-list-icon" width="24" height="24">
+                    <use href="./images/sprite.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
     <main class="portfolio-main">
       <section class="portfolio section">
         <div class="container">
         <h1 class="visually-hidden">All types of our projects</h1>
-        <ul class="portfolio-nav-list list">
+        <!-- <ul class="portfolio-nav-list list">
           <li class="portfolio-nav-item">
             <button class="filter-button" type="button">All</button>
           </li>
@@ -69,7 +171,7 @@
           <li class="portfolio-nav-item">
             <button class="filter-button" type="button">Marketing</button>
           </li>
-        </ul>
+        </ul> -->
         <ul class="projects-list list">
           <li class="projects-list-item">
             <a class="projects-list-link" href="">

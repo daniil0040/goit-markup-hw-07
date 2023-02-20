@@ -33,6 +33,7 @@ img {
   display: block;
 }
 .container {
+  max-width: 428px;
   margin-right: auto;
   margin-left: auto;
   padding-right: 15px;
@@ -114,7 +115,9 @@ img {
 .header-contacts {
   display: none;
 }
-
+.main-header {
+  padding: 24px 0;
+}
 .logotype {
   font-family: "Raleway";
   font-weight: 800;
@@ -127,8 +130,6 @@ img {
 .page-header-container {
   display: flex;
   justify-content: space-between;
-  padding: 24px 15px;
-  min-width: 100%;
 }
 .mob-menu-open-btn {
   background-color: transparent;
@@ -225,8 +226,7 @@ img {
 }
 .mob-menu-sicial-list {
   display: flex;
-  justify-content: center;
-  column-gap: 50px;
+  column-gap: 20px;
 }
 .mob-menu-social-list-link {
   display: flex;
@@ -678,7 +678,7 @@ img {
   display: flex;
   align-items: center;
   font-weight: 400;
-  font-size: 9px;
+  font-size: 12px;
   line-height: 1.33;
   letter-spacing: 0.04em;
   color: #757575;
@@ -736,7 +736,7 @@ img {
   border-color: transparent;
 }
 .portfolio {
-  padding-top: 96px;
+  padding-top: 48px;
 }
 .portfolio-nav-list {
   display: flex;
@@ -749,11 +749,10 @@ img {
 .projects-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 48px;
+  gap: 48px;
 }
 .projects-list-item {
-  flex-basis: calc((100% - 48px) / 3);
+  width: 100%;
 }
 .projects-list-link {
   display: block;

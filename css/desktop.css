@@ -10,7 +10,6 @@
   .page-header-container {
     display: flex;
     align-items: center;
-    padding: 0;
   }
   .navigation {
     display: flex;
@@ -83,6 +82,7 @@
     display: block;
   }
   .contact-link {
+    font-size: 16px;
     font-style: normal;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -99,8 +99,8 @@
   /* ================== /HEADER ================== */
   /* ================== HERO ==================== */
   .hero {
-    padding-top: 187px;
-    padding-bottom: 187px;
+    padding-top: 188px;
+    padding-bottom: 188px;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
@@ -179,9 +179,11 @@
   }
   .footer-text-container {
     margin-right: 120px;
+    margin-bottom: 0;
   }
   .footer-social-list-container {
     margin-right: 77px;
+    margin-bottom: 0;
   }
   /* ================== /FOOTER ==================== */
   /* ==================   MODAL-WINDOW ==================== */
@@ -192,4 +194,7 @@
     font-size: 12px;
   }
   /* ==================   /MODAL-WINDOW ==================== */
+  .projects-list-item {
+    flex-basis: calc((100% - 48px) / 3);
+  }
 }
