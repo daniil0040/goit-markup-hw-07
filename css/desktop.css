@@ -173,6 +173,12 @@
   }
   /* ================== /CUSTOMERS ==================== */
   /* ================== FOOTER ==================== */
+  .footer-text-container {
+    margin-right: 120px;
+  }
+  .footer-social-list-container {
+    margin-right: 80px;
+  }
   /* ================== /FOOTER ==================== */
   /* ==================   MODAL-WINDOW ==================== */
   .modal {
