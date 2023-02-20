@@ -1,0 +1,85 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  /* ================== HERO ==================== */
+  .hero {
+    padding: 0 187px;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/web_wtudio_desktop_bg/bg_desktop.jpg");
+  }
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url("../images/web_wtudio_desktop_bg/bg_desktop@2x\ .jpg");
+      max-width: 1440px;
+    }
+    .hero-title {
+      font-size: 56px;
+      line-height: 1.07;
+      max-width: 500px;
+      margin-bottom: 48px;
+    }
+  }
+  /* ================== /HERO ==================== */
+  /* ================== SECTION-ABOUT ==================== */
+  .section-about-subtitle {
+    text-align: start;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  .section-about-text {
+    max-width: 264px;
+  }
+
+  .about-icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 264px;
+    height: 112px;
+    background: #f4f4fd;
+    border-radius: 4px;
+    margin-bottom: 8px;
+  }
+  /* ================== /SECTION-ABOUT ==================== */
+  /* ================== IMG-SECTION ==================== */
+  .img-section {
+    padding-bottom: 120px;
+    display: block;
+  }
+  .img-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  /* ================== /IMG-SECTION ==================== */
+  /* ================== TEAM ==================== */
+  .team-list {
+    gap: 24px;
+  }
+  /* ================== /TEAM ==================== */
+  /* ================== CUSTOMERS ==================== */
+  .customers-list {
+    gap: 24px;
+  }
+  .customers-list-item {
+    flex-basis: calc((100% - 120px) / 6);
+  }
+  /* ================== /CUSTOMERS ==================== */
+  /* ================== FOOTER ==================== */
+  /* ================== /FOOTER ==================== */
+}
