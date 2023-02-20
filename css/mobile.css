@@ -1,7 +1,4 @@
 @media screen and (min-width: 480px) {
-  .container {
-    max-width: 426px;
-  }
   /* ================== HEADER ================== */
   .mob-menu-contact-link-tel {
     font-size: 36px;
@@ -29,6 +26,9 @@
   .hero-title {
     font-size: 36px;
   }
+  .mob-menu-sicial-list {
+    column-gap: 50px;
+  }
   /* ================== /HERO ==================== */
   /* ================== SECTION-ABOUT ==================== */
 
@@ -48,6 +48,10 @@
   }
   .modal-form-check-desc {
     font-size: 12px;
+  }
+  .modal {
+    width: 392px;
+    min-height: 586px;
   }
   /* ==================   /MODAL-WINDOW ==================== */
 }
