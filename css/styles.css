@@ -467,17 +467,16 @@ img {
 .subscribe-form {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 .subscribe-form-input {
-  width: 100%;
+  max-width: 396px;
   height: 40px;
   padding: 8px 16px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   background-color: #2e2f42;
-  margin-right: 24px;
   color: var(--white-color);
   margin-bottom: 16px;
 }

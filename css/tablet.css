@@ -142,6 +142,33 @@
     flex-basis: calc((100% - 48px) / 3);
   }
   /* ================== /CUSTOMERS ==================== */
+  /* ================== FOOTER ==================== */
+  .logotype-footer {
+    text-align: start;
+  }
+  .footer-text-container {
+    margin-right: 24px;
+  }
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-social-list-suptitle {
+    text-align: start;
+  }
+  .subscribe-form-title {
+    text-align: start;
+  }
+  .subscribe-form-input {
+    width: 268px;
+    margin-bottom: 0;
+    margin-right: 24px;
+  }
+  .subscribe-form {
+    flex-direction: row;
+  }
+  /* ================== /FOOTER ==================== */
 
   /* ==================   MODAL-WINDOW ==================== */
   .modal {
