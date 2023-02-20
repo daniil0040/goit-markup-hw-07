@@ -3,9 +3,13 @@
     max-width: 766px;
   }
   /* ================== HEADER ================== */
+  .main-header {
+    padding: 0 15px;
+  }
   .page-header-container {
     display: flex;
     align-items: center;
+    padding: 0;
   }
   .navigation {
     display: flex;
@@ -19,14 +23,7 @@
     display: flex;
     align-items: center;
   }
-  .header-contacts-list {
-    display: flex;
-    align-items: center;
-  }
   .nav-item:not(:last-child) {
-    margin-right: 40px;
-  }
-  .header-contacts-item:not(:last-child) {
     margin-right: 40px;
   }
   .main-header {
@@ -74,6 +71,9 @@
     background-color: #404bbf;
     border-radius: 2px;
   }
+  .header-contacts {
+    display: block;
+  }
   .contact-link {
     font-style: normal;
     line-height: 1.5;
@@ -84,6 +84,9 @@
   .contact-link:hover,
   .contact-link:focus {
     color: #404bbf;
+  }
+  .mob-menu-open-btn {
+    display: none;
   }
   /* ================== /HEADER ================== */
   /* ================== HERO ==================== */
@@ -139,4 +142,13 @@
     flex-basis: calc((100% - 48px) / 3);
   }
   /* ================== /CUSTOMERS ==================== */
+
+  /* ==================   MODAL-WINDOW ==================== */
+  .modal {
+    min-width: 408px;
+  }
+  .modal-form-check-desc {
+    font-size: 12px;
+  }
+  /* ==================   /MODAL-WINDOW ==================== */
 }

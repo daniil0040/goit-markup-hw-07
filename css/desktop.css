@@ -6,6 +6,97 @@
     padding-top: 120px;
     padding-bottom: 120px;
   }
+  /* ================== HEADER ================== */
+  .page-header-container {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
+  }
+  .logotype {
+    margin-right: 76px;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .header-contacts-list {
+    display: flex;
+    align-items: center;
+  }
+  .nav-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .header-contacts-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  .main-header {
+    border-bottom: 1px solid #e7e9fc;
+  }
+  .nav-link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--main-color);
+    transition: color var(--transform-dir-and-func);
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #404bbf;
+  }
+  .current {
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #404bbf;
+  }
+  .current-portfolio::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 66px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
+  .current-index::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 48px;
+    height: 4px;
+    background-color: #404bbf;
+    border-radius: 2px;
+  }
+  .header-contacts {
+    display: block;
+  }
+  .contact-link {
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    transition: color var(--transform-dir-and-func);
+  }
+  .contact-link:hover,
+  .contact-link:focus {
+    color: #404bbf;
+  }
+  .mob-menu-open-btn {
+    display: none;
+  }
+  /* ================== /HEADER ================== */
   /* ================== HERO ==================== */
   .hero {
     padding-top: 187px;
@@ -83,4 +174,12 @@
   /* ================== /CUSTOMERS ==================== */
   /* ================== FOOTER ==================== */
   /* ================== /FOOTER ==================== */
+  /* ==================   MODAL-WINDOW ==================== */
+  .modal {
+    min-width: 408px;
+  }
+  .modal-form-check-desc {
+    font-size: 12px;
+  }
+  /* ==================   /MODAL-WINDOW ==================== */
 }

@@ -14,7 +14,6 @@
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/web_studio_tablet_bg/bg-tablet.jpg");
-    max-width: 768px;
   }
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
@@ -42,4 +41,13 @@
   /* ================== CUSTOMERS ==================== */
 
   /* ================== /CUSTOMERS ==================== */
+
+  /* ==================   MODAL-WINDOW ==================== */
+  .modal {
+    min-width: 393px;
+  }
+  .modal-form-check-desc {
+    font-size: 12px;
+  }
+  /* ==================   /MODAL-WINDOW ==================== */
 }
