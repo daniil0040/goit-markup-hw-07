@@ -25,6 +25,7 @@
   }
   .main-header {
     border-bottom: 1px solid #e7e9fc;
+    padding: 0;
   }
   .nav-link {
     position: relative;
