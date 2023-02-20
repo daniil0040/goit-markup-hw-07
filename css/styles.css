@@ -742,6 +742,8 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 72px;
+  flex-wrap: wrap;
+  row-gap: 24px;
 }
 .portfolio-nav-item:not(:last-child) {
   margin-right: 24px;
