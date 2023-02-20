@@ -173,6 +173,8 @@ img {
   z-index: 10;
   padding-top: 80px;
   padding-bottom: 40px;
+  transition: opacity var(--transform-dir-and-func),
+    visibility var(--transform-dir-and-func);
 }
 .mob-menu-container {
   margin-left: auto;
@@ -413,6 +415,12 @@ img {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+.footer-text-container {
+  margin-bottom: 72px;
+}
+.footer-social-list-container {
+  margin-bottom: 72px;
 }
 .footer-info {
   line-height: 1.5;
